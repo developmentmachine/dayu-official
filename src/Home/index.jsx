@@ -19,6 +19,9 @@ import {
   Footer01DataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
+import {IntlProvider} from "react-intl";
+import cnLocale from './zh-CN';
+const appLocale = cnLocale;
 
 let isMobile;
 enquireScreen((b) => {
@@ -56,6 +59,7 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
+      <IntlProvider locale={appLocale.locale} messages={appLocale.messages}>
       <Nav0
         id="Nav0_0"
         key="Nav0_0"
@@ -92,6 +96,7 @@ export default class Home extends React.Component {
         dataSource={Footer01DataSource}
         isMobile={this.state.isMobile}
       />,
+      </IntlProvider>
     ];
     return (
       <div

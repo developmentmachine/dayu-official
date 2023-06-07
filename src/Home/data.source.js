@@ -18,8 +18,6 @@ export const Banner00DataSource = {
   textWrapper: { className: 'banner0-text-wrapper' },
   title: {
     className: 'banner0-title',
-    // eslint-disable-next-line global-require
-    children: require('./static/banner0-title.jpeg'),
   },
   content: {
     className: 'banner0-content',
