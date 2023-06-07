@@ -5,6 +5,8 @@ import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import { isImg } from './utils';
 
+import banner0Image from './static/banner0-title.jpeg';
+
 class Banner extends React.PureComponent {
   render() {
     const { ...currentProps } = this.props;
@@ -19,20 +21,8 @@ class Banner extends React.PureComponent {
           delay={200}
           {...dataSource.textWrapper}
         >
-          <div key="title" {...dataSource.title}>
-            {typeof dataSource.title.children === 'string'
-            && dataSource.title.children.match(isImg) ? (
-              <img src={dataSource.title.children} width="100%" alt="img" />
-              ) : (
-                dataSource.title.children
-              )}
-          </div>
-          <div key="content" {...dataSource.content}>
-            {dataSource.content.children}
-          </div>
-          <Button ghost key="button" {...dataSource.button}>
-            {dataSource.button.children}
-          </Button>
+          北京大誉环保科技有限公司成立于2009年，是一家专注于环保产品和高效换热产品研究、开发、生产及销售的高科技企业，总部设立于北京，生产基地位于天津市武清区，公司技术和研发实力雄厚，是国家认定的“高新技术企业”，拥有多项国家专利。
+          {/* <img src={banner0Image} width="100%" alt="img" /> */}
         </QueueAnim>
         <TweenOne
           animation={{
