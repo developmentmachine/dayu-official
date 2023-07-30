@@ -4,6 +4,7 @@
   "private": true,
   "repository": "twbs/examples",
   "license": "MIT",
+  "homepage": ".",
   "stackblitz": {
     "startCommand": "npm start"
   },
@@ -23,6 +24,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
+    "sharp": "^0.32.4",
     "typescript": "^5.1.6"
   },
   "devDependencies": {
