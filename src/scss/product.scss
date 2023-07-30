@@ -27,7 +27,7 @@ main {
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 0.5rem;
   //background-image: url("../static/bg.jpg");
   //background-repeat: no-repeat;
   //background-size: contain;
@@ -99,3 +99,42 @@ main {
     margin-top: 7rem;
   }
 }
+
+/* MASTHEAD CSS
+-------------------------------------------------- */
+header.masthead {
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  background-image: url("../static/bg.jpg");
+  background-repeat: no-repeat;
+  //opacity: 0.8;
+}
+
+header.masthead h1, header.masthead .h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-bottom: 0;
+  }
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+  header.masthead h1, header.masthead .h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1, header.masthead .h1 {
+    font-size: 3.5rem;
+  }
+}
+
+
+/* ABOUT CSS
+-------------------------------------------------- */
