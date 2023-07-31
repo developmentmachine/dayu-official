@@ -1,7 +1,7 @@
 import React from "react";
 import {Carousel} from "react-bootstrap";
 
-const Highlights: React.FC<{ id: string }> = (props) => {
+const Highlight: React.FC<{ id: string }> = (props) => {
     console.log(props)
     return (
         <Carousel data-bs-theme="dark" id={props.id}>
@@ -44,4 +44,4 @@ const Highlights: React.FC<{ id: string }> = (props) => {
     );
 };
 
-export default Highlights;
+export default Highlight;
