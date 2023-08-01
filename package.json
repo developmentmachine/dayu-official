@@ -9,7 +9,7 @@
     "startCommand": "npm start"
   },
   "scripts": {
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next dev",
     "lint": "next lint",
     "fix": "next lint --fix",
