@@ -6,6 +6,7 @@ import Achievement from "@/components/Achievement";
 import Masthead from "@/components/Masthead";
 import Highlight from "@/components/Highlight";
 import Product from "@/components/Product";
+import Ability from "@/components/Ability";
 
 export default function Home() {
     return (
@@ -19,7 +20,7 @@ export default function Home() {
                 <Header/>
                 <Highlight id={"highlight"}/>
                 <Masthead id={"companyProfile"}/>
-                <Product/>
+                <Ability id={"ability"}/>
                 <Achievement id={"achievement"}/>
                 <Footer/>
             </Container>

@@ -21,7 +21,7 @@ const Header: React.FC = () => {
                         <Nav.Link href="#companyProfile">公司概况</Nav.Link>
                         <Nav.Link href="#companyProfile">研发历史</Nav.Link>
                         <Nav.Link href="#products">产品与服务</Nav.Link>
-                        <Nav.Link href="#companyProfile">技术能力</Nav.Link>
+                        <Nav.Link href="#ability">技术能力</Nav.Link>
                         <Nav.Link href="#achievement">应用业绩</Nav.Link>
                         <Nav.Link href="#contact">联系我们</Nav.Link>
                     </Nav>
