@@ -19,10 +19,10 @@ export default function Home() {
             <Container>
                 <Header/>
                 <Highlight id={"highlight"}/>
-                <Masthead id={"companyProfile"}/>
+                {/*<Masthead id={"companyProfile"}/>*/}
                 <Ability id={"ability"}/>
                 <Achievement id={"achievement"}/>
-                <Footer/>
+                <Footer id={"aboutUs"}/>
             </Container>
         </>
     );

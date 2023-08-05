@@ -1,19 +1,16 @@
 import React from "react";
 import {Carousel} from "react-bootstrap";
+import Image from "next/image";
+import bg from "../static/bg.jpg";
 
 const Highlight: React.FC<{ id: string }> = (props) => {
-    console.log(props)
     return (
         <Carousel data-bs-theme="dark" id={props.id}>
             <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=First slide&bg=f5f5f5"
-                    alt="First slide"
-                />
+                <Image src={bg} alt={""}/>
                 <Carousel.Caption>
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    <h5>北京大誉环保科技有限公司</h5>
+                    <p>成立于2009年，是一家专注于环保产品和高效换热产品研究、开发、生产及销售的高科技企业，总部设立于北京，下设生产基地位于天津武清，公司技术和研发实力雄厚，是国家认定的“高新技术企业”，拥有多项国家专利。</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>

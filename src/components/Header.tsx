@@ -23,7 +23,7 @@ const Header: React.FC = () => {
                         <Nav.Link href="#products">产品与服务</Nav.Link>
                         <Nav.Link href="#ability">技术能力</Nav.Link>
                         <Nav.Link href="#achievement">应用业绩</Nav.Link>
-                        <Nav.Link href="#contact">联系我们</Nav.Link>
+                        <Nav.Link href="#aboutUs">联系我们</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
