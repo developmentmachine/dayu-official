@@ -3,10 +3,10 @@ import Container from "react-bootstrap/Container";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Achievement from "@/components/Achievement";
-import Masthead from "@/components/Masthead";
+import CompanyProfile from "@/components/CompanyProfile";
 import Highlight from "@/components/Highlight";
-import Product from "@/components/Product";
-import Ability from "@/components/Ability";
+import ProductService from "@/components/ProductService";
+import Tech from "@/components/Tech";
 
 export default function Home() {
     return (
@@ -18,11 +18,12 @@ export default function Home() {
             </Head>
             <Container>
                 <Header/>
-                <Highlight id={"highlight"}/>
-                <Masthead id={"companyProfile"}/>
-                <Ability id={"ability"}/>
+                {/*<Highlight id={"highlight"}/>*/}
+                <CompanyProfile id={"companyProfile"}/>
+                <ProductService id={"ability"}/>
+                <Tech id={"tech"}/>
                 <Achievement id={"achievement"}/>
-                <Footer/>
+                <Footer id={"aboutUs"}/>
             </Container>
         </>
     );

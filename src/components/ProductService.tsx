@@ -9,11 +9,10 @@ import ps5 from "../static/ps5.png";
 import ps6 from "../static/ps6.png";
 import ps7 from "../static/ps7.png";
 import Image from "next/image";
-import {auto} from "@popperjs/core";
 
 
 
-const Ability: React.FC<{id:string}> = (props) => {
+const ProductService: React.FC<{id:string}> = (props) => {
     return (
         <Card bg="Light page-section" border="light" id={props.id}>
             <Card.Body>
@@ -80,4 +79,4 @@ const Ability: React.FC<{id:string}> = (props) => {
         </Card>
     )
 };
-export default Ability;
+export default ProductService;
