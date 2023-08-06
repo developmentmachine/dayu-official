@@ -1,28 +1,17 @@
 body {
-    padding: 1.5rem;
-}
-
-body {
     background-image: linear-gradient(180deg, var(--bs-secondary-bg), var(--bs-body-bg) 100px, var(--bs-body-bg));
     color: rgb(var(--bs-tertiary-color-rgb));
 }
 
-.header {
-    max-width: 100%;
-    min-width: 100%;
+.navbar {
+    height: 5rem;
 }
 
-.header a:hover {
-    color: #ff8425;
-}
-
-main {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.container {
-    margin-top: 2.5rem;
+.container section::before{
+    content: '';
+    display: block;
+    height: 5rem;
+    margin-top: -5rem;
 }
 
 .card {
@@ -111,7 +100,7 @@ main {
 
 /* MASTHEAD CSS
 -------------------------------------------------- */
-header.masthead {
+.masthead {
     background-position: center;
     background-attachment: scroll;
     background-size: cover;
@@ -119,28 +108,28 @@ header.masthead {
     background-repeat: no-repeat;
 }
 
-header.masthead h1, header.masthead .h1 {
+.masthead h1, .masthead .h1 {
     font-size: 2.25rem;
 }
 
 @media (min-width: 992px) {
-    header.masthead {
+    .masthead {
         height: 100vh;
         min-height: 40rem;
         padding-bottom: 0;
     }
 
-    header.masthead p {
+    .masthead p {
         font-size: 1.15rem;
     }
 
-    header.masthead h1, header.masthead .h1 {
+    .masthead h1, .masthead .h1 {
         font-size: 3rem;
     }
 }
 
 @media (min-width: 1200px) {
-    header.masthead h1, header.masthead .h1 {
+    .masthead h1, .masthead .h1 {
         font-size: 3.5rem;
     }
 }
@@ -279,12 +268,6 @@ header.masthead h1, header.masthead .h1 {
     font-style: italic;
     font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     margin-bottom: 4rem;
-}
-
-@media (min-width: 768px) {
-    section {
-        padding: 9rem 0;
-    }
 }
 
 .team-member {
