@@ -9,6 +9,7 @@ import ps5 from "../static/ps5.png";
 import ps6 from "../static/ps6.png";
 import ps7 from "../static/ps7.png";
 import Image from "next/image";
+import {BigPlayButton, ControlBar, Player} from "video-react";
 
 
 
@@ -76,6 +77,10 @@ const ProductService: React.FC<{id:string}> = (props) => {
                 </div>
             </Row>
             </Card.Body>
+            <Player src="/video/tech.mp4">
+                <BigPlayButton position="center" />
+                <ControlBar autoHide={false} className="my-class" />
+            </Player>
         </Card>
     )
 };
