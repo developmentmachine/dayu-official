@@ -5,21 +5,20 @@ import Logo from "../static/logo.png";
 
 const Header: React.FC = () => {
     return (
-        <Navbar fixed="top" expand="lg" className="navbar navbar-dark bg-dark" >
-            <Container>
+        <Navbar expand="lg" fixed={"top"} bg="dark" data-bs-theme="dark">
+            <Container fluid>
                 <Navbar className="">
                     <Navbar.Brand href="/">
                         <Image className="img-fluid" src={Logo} alt={""} style={{
                             objectFit: "contain",
-                            width: "200px",
+                            width: "12rem",
                         }}/>
                     </Navbar.Brand>
                 </Navbar>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
+                <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end bg-dark">
+                    <Nav fill className="me-auto">
                         <Nav.Link href="#companyProfile">公司概况</Nav.Link>
-                        {/*<Nav.Link href="#companyProfile">研发历史</Nav.Link>*/}
                         <Nav.Link href="#ability">产品与服务</Nav.Link>
                         <Nav.Link href="#tech">技术能力</Nav.Link>
                         <Nav.Link href="#achievement">应用业绩</Nav.Link>

@@ -39,15 +39,11 @@ const Footer: React.FC<{id:string}> = (props) => {
                 </div>*/}
                 <Col>
                     <h5>电话</h5>
-                    <p>010-12345678</p>
-                </Col>
-                <Col>
-                    <h5>邮箱</h5>
-                    <p>something@qq.com</p>
+                    <p>010-86485278</p>
                 </Col>
                 <Col>
                     <h5>地址</h5>
-                    <p>北京昌平</p>
+                    <p>北京市昌平区马池口镇白浮村2号晴空科技院内</p>
                 </Col>
             </Row>
             <Row>
