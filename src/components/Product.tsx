@@ -12,10 +12,7 @@ import ps7 from "../static/ps7.png";
 
 const Product: React.FC<{}> = (props) => {
     return (
-        <Container style={{
-            paddingLeft: 0,
-            paddingRight: 0,
-        }}>
+        <Container fluid className="pt-5 mt-5">
             <Row xs={1} md={2} className="bg-body" style={{
                 marginTop: "1rem"
             }}>
@@ -25,8 +22,7 @@ const Product: React.FC<{}> = (props) => {
                         <Card.Body>
                             <Card.Title>高通量换热管生产</Card.Title>
                             <Card.Text>
-                                我公司目前主要生产的高通量换热管，该产品具有传热系数高、提高临界热通量、不易结垢、环保、节能降耗，基本不需要维修等优点。
-                                高通量管即在光管或其他高效换热管表面采用粉末冶金的方法在表面烧结一薄层具有特定结构的多孔表面高效换热管。
+                                我公司目前主要生产的高通量换热管，该产品具有传热系数高、提高临界热通量、不易结垢、环保、节能降耗，基本不需要维修等优点。 高通量管即在光管或其他高效换热管表面采用粉末冶金的方法在表面烧结一薄层具有特定结构的多孔表面高效换热管。
                             </Card.Text>
                         </Card.Body>
                     </Card>
