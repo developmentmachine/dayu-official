@@ -9,13 +9,12 @@ import { Container } from "react-bootstrap";
 
 const Achievement: React.FC<{ id: string }> = (props) => {
     return (
-        <Container id={props.id}>
-            <div className="achievement">
+        <Container fluid id={props.id}>
+            <div className="achievement pt-5 mt-5">
                 <div className="text-center">
                     <h2 className="section-heading text-uppercase">应用业绩</h2>
-                    <h3 className="section-subheading text-muted"></h3>
                 </div>
-                <div className="row">
+                <div className="row pt-3 mt-3">
                     <div className="col-lg-3 col-sm-6 mb-3">
                         <div className="portfolio-item">
                             <a className="portfolio-link" data-bs-toggle="modal" href="#">

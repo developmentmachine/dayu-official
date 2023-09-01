@@ -17,7 +17,7 @@ const CompanyProfile: React.FC<{ id: string }> = (props) => {
                     </div>
                 </div>
             </div>*/
-        <Container id={props.id}>
+        <Container className="pt-5 mt-5" id={props.id}>
             <Row>
                 <Image src={bg.src} fluid/>
             </Row>
