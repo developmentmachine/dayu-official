@@ -20,7 +20,7 @@ const Header: React.FC = () => {
                     <Nav fill className="me-auto">
                         <Nav.Link href="#companyProfile">公司概况</Nav.Link>
                         <Nav.Link href="#ability">产品与服务</Nav.Link>
-                        <Nav.Link href="#tech">技术能力</Nav.Link>
+                        <Nav.Link href="#researchHistory">技术能力</Nav.Link>
                         <Nav.Link href="#achievement">应用业绩</Nav.Link>
                         <Nav.Link href="#aboutUs">联系我们</Nav.Link>
                     </Nav>
