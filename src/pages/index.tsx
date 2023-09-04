@@ -6,7 +6,7 @@ import Achievement from "@/components/Achievement";
 import CompanyProfile from "@/components/CompanyProfile";
 import Highlight from "@/components/Highlight";
 import ProductService from "@/components/ProductService";
-import Tech from "@/components/Tech";
+import ResearchHistory from "@/components/ResearchHistory";
 
 export default function Home() {
     return (
@@ -21,7 +21,7 @@ export default function Home() {
                 {/*<Highlight id={"highlight"}/>*/}
                 <CompanyProfile id={"companyProfile"}/>
                 <ProductService id={"ability"}/>
-                <Tech id={"tech"}/>
+                <ResearchHistory id={"researchHistory"}/>
                 <Achievement id={"achievement"}/>
                 <Footer id={"aboutUs"}/>
             </Container>
