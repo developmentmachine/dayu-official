@@ -15,7 +15,7 @@ import {BigPlayButton, ControlBar, Player} from "video-react";
 
 const ProductService: React.FC<{id:string}> = (props) => {
     return (
-        <Container className="" id={props.id}>
+        <Container className="mt-5 pt-5" id={props.id}>
                 <div className="text-center">
                     <p className="fs-3">高通量换热管生产</p>
                     <p className="text-start">我公司目前主要生产的高通量换热管，该产品具有传热系数高、提高临界热通量、不易结垢、环保、节能降耗，基本不需要维修等优点。</p>
