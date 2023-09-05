@@ -5,14 +5,16 @@ import product2 from "../static/product2.png";
 import product3 from "../static/product3.png";
 import product4 from "../static/product4.png";
 import { Container } from "react-bootstrap";
+import {useTranslation} from "next-i18next";
 
 
 const Achievement: React.FC<{ id: string }> = (props) => {
+    const { t } = useTranslation();
     return (
-        <Container fluid id={props.id}>
-            <div className="achievement pt-5 mt-5">
+        <Container id={props.id}>
+            <div className="achievement">
                 <div className="text-center">
-                    <h2 className="section-heading text-uppercase">应用业绩</h2>
+                    <h2 className="section-heading text-uppercase">{t("achievement:title")}</h2>
                 </div>
                 <div className="row pt-3 mt-3">
                     <div className="col-lg-3 col-sm-6 mb-3">
@@ -25,7 +27,7 @@ const Achievement: React.FC<{ id: string }> = (props) => {
                             </a>
                             <div className="portfolio-caption">
                                 <div className="portfolio-caption-heading">
-                                    <p>浙江石油化工有限公司异丁烷反异构装置 稳定塔重沸器</p>
+                                    <p>{t("achievement:k1")}</p>
                                 </div>
                                 <div className="portfolio-caption-subheading text-muted">
                                     <p>BJU1600-2.24/2.8-339-5.5/32-2HFO</p>
@@ -43,7 +45,7 @@ const Achievement: React.FC<{ id: string }> = (props) => {
                             </a>
                             <div className="portfolio-caption">
                                 <div className="portfolio-caption-heading">
-                                    <p>振华石油化工有限公司丙烷脱氢装置脱丙烷塔热回收再沸器</p>
+                                    <p>{t("achievement:k2")}</p>
                                 </div>
                                 <div className="portfolio-caption-subheading text-muted">
                                     <p>BXM1700-3.8/2.0-2404-12/19-2 HFO</p>
@@ -61,7 +63,7 @@ const Achievement: React.FC<{ id: string }> = (props) => {
                             </a>
                             <div className="portfolio-caption">
                                 <div className="portfolio-caption-heading">
-                                    <p>中国石油四川石化有限责任公司 催化裂化装置 解析塔中间重沸器</p>
+                                    <p>{t("achievement:k3")}</p>
                                 </div>
                                 <div className="portfolio-caption-subheading text-muted">
                                     <p>BJS1500-1.81-635-6/25-4 GT</p>
@@ -79,7 +81,7 @@ const Achievement: React.FC<{ id: string }> = (props) => {
                             </a>
                             <div className="portfolio-caption">
                                 <div className="portfolio-caption-heading">
-                                    <p>中国石油化工股份有限公司镇海炼化分公司 催化裂化装置稳定汽油-凝缩油换热器</p>
+                                    <p>{t("achievement:k4")}</p>
                                 </div>
                                 <div className="portfolio-caption-subheading text-muted">
                                     <p>BJS1400-2.0/2.25-540-6/24-4 HFO</p>

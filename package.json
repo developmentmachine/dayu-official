@@ -9,7 +9,7 @@
     "startCommand": "npm start"
   },
   "scripts": {
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next dev",
     "lint": "next lint",
     "fix": "next lint --fix",
@@ -20,11 +20,14 @@
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "bootstrap": "^5.3.1",
+    "i18next": "^23.4.6",
     "next": "^13.4.12",
     "next-videos": "^1.4.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^13.2.2",
+    "next-i18next": "^14.0.2",
     "redux": "^4.2.1",
     "sharp": "^0.32.4",
     "typescript": "^5.1.6",

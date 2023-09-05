@@ -7,11 +7,8 @@ body {
     height: 5rem;
 }
 
-.container section::before{
-    content: '';
-    display: block;
-    height: 5rem;
-    margin-top: -5rem;
+.container, .container-fluid{
+    padding-top: 5rem;
 }
 
 /* CUSTOMIZE THE CAROUSEL
