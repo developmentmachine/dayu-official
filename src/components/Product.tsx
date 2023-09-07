@@ -12,7 +12,7 @@ import ps7 from "../static/ps7.png";
 
 const Product: React.FC<{}> = (props) => {
     return (
-        <Container fluid className="pt-5 mt-5">
+        <Container className="">
             <Row xs={1} md={2} className="bg-body" style={{
                 marginTop: "1rem"
             }}>

@@ -7,14 +7,35 @@ import CompanyProfile from "@/components/CompanyProfile";
 import Highlight from "@/components/Highlight";
 import ProductService from "@/components/ProductService";
 import ResearchHistory from "@/components/ResearchHistory";
+import {useTranslation} from "next-i18next";
+import type { GetStaticProps, InferGetStaticPropsType } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
+type Props = {
+    // Add custom props here
+}
+// or getServerSideProps: GetServerSideProps<Props> = async ({ locale })
+export const getStaticProps: GetStaticProps<Props> = async ({locale,}) => ({
+    props: {
+        ...(await serverSideTranslations(locale ?? 'zh', [
+            'common',
+            'header',
+            'companyProfile',
+            'productService',
+            'researchHistory',
+            'achievement',
+            'footer'
+        ])),
+    },
+})
 export default function Home() {
+    const { t } = useTranslation()
     return (
         <>
             <Head>
                 <meta charSet="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                <title>北京大誉环保科技有限公司</title>
+                <title>{t("common:title")}</title>
             </Head>
             <Container>
                 <Header/>
