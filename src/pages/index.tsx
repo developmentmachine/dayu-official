@@ -4,12 +4,11 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Achievement from "@/components/Achievement";
 import CompanyProfile from "@/components/CompanyProfile";
-import Highlight from "@/components/Highlight";
 import ProductService from "@/components/ProductService";
 import ResearchHistory from "@/components/ResearchHistory";
 import {useTranslation} from "next-i18next";
-import type { GetStaticProps, InferGetStaticPropsType } from "next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import type {GetStaticProps} from "next";
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 type Props = {
     // Add custom props here
@@ -17,7 +16,7 @@ type Props = {
 // or getServerSideProps: GetServerSideProps<Props> = async ({ locale })
 export const getStaticProps: GetStaticProps<Props> = async ({locale,}) => ({
     props: {
-        ...(await serverSideTranslations(locale ?? 'zh', [
+        ...(await serverSideTranslations(locale ? locale : 'zh', [
             'common',
             'header',
             'companyProfile',
@@ -29,7 +28,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({locale,}) => ({
     },
 })
 export default function Home() {
-    const { t } = useTranslation()
+    const {t} = useTranslation()
     return (
         <>
             <Head>
