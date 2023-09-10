@@ -40,10 +40,13 @@ const Header: React.FC = () => {
         <Navbar expand="lg" fixed={"top"} bg="dark" data-bs-theme="dark">
             <Navbar className="">
                 <Navbar.Brand href="/">
-                    <Image className="img-fluid" src={Logo} alt={""} style={{
-                        objectFit: "contain",
-                        width: "12rem",
-                    }}/>
+                    <Image className="img-fluid"
+                           src={Logo} alt={""}
+                           style={{
+                               objectFit: "contain",
+                               width: "12rem",
+                           }}
+                    />
                 </Navbar.Brand>
             </Navbar>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
