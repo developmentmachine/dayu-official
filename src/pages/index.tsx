@@ -17,10 +17,10 @@ type Props = {
 // export const getStaticProps: GetStaticProps<Props> =
 export const getServerSideProps: GetServerSideProps<Props> =
     async ({locale, res}) => {
-        res.setHeader(
-            'Cache-Control',
-            'public, max-age=31536000, immutable'
-        )
+        // res.setHeader(
+        //     'Cache-Control',
+        //     'public, max-age=31536000, stale-while-revalidate=3600'
+        // )
         return {
             props: {
                 ...(await serverSideTranslations(locale ? locale : 'zh', [
@@ -44,7 +44,6 @@ export default function Home({time,}: InferGetServerSidePropsType<typeof getServ
                 <meta charSet="utf-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <title>{t("common:title")}</title>
-                <time dateTime={time}>{time}</time>
             </Head>
             <div>
                 <Header/>
