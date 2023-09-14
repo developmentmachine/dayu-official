@@ -6,7 +6,12 @@ const nextConfig = {
     i18n,
     reactStrictMode: true,
     images: {
-        // unoptimized: true
-    }
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'dayu-app-1320376356.cos.ap-beijing.myqcloud.com',
+            },
+        ],
+    },
 }
 module.exports = nextConfig;

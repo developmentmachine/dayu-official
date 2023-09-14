@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "next build",
-    "start": "next dev",
+    "start": "next start",
     "lint": "next lint",
     "fix": "next lint --fix",
     "test": "npm run build"

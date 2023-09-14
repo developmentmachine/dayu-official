@@ -1,14 +1,13 @@
 import React from "react";
-import {Carousel} from "react-bootstrap";
-import Image from "next/image";
-import bg from "../static/bg.jpg";
+import {Carousel, Image} from "react-bootstrap";
+// import Image from "next/image";
 
 const Highlight: React.FC<{ id: string }> = (props) => {
     return (
         <section>
             <Carousel data-bs-theme="dark" id={props.id}>
                 <Carousel.Item>
-                    <Image src={bg} alt={""}/>
+                    <Image src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/bg.png"/>
                     <Carousel.Caption>
                         <h5>北京大誉环保科技有限公司</h5>
                         <p>成立于2009年，是一家专注于环保产品和高效换热产品研究、开发、生产及销售的高科技企业，总部设立于北京，下设生产基地位于天津武清，公司技术和研发实力雄厚，是国家认定的“高新技术企业”，拥有多项国家专利。</p>

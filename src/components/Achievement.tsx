@@ -1,15 +1,14 @@
 import React from "react";
-import Image from "next/image";
-import product1 from "../static/product1.png";
-import product2 from "../static/product2.png";
-import product3 from "../static/product3.png";
-import product4 from "../static/product4.png";
-import { Container } from "react-bootstrap";
+// import Image from "next/image";
+// import product1 from "../static/product1.png";
+// import product2 from "../static/product2.png";
+// import product3 from "../static/product3.png";
+// import product4 from "../static/product4.png";
+import {Container, Image} from "react-bootstrap";
 import {useTranslation} from "next-i18next";
 
-
 const Achievement: React.FC<{ id: string }> = (props) => {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
     return (
         <Container id={props.id}>
             <div className="achievement">
@@ -23,7 +22,8 @@ const Achievement: React.FC<{ id: string }> = (props) => {
                                 <div className="portfolio-hover">
                                     <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <Image className="img-fluid" src={product1} alt={""}/>
+                                <Image className="img-fluid"
+                                       src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/product1.png"/>
                             </a>
                             <div className="portfolio-caption">
                                 <div className="portfolio-caption-heading">
@@ -41,7 +41,8 @@ const Achievement: React.FC<{ id: string }> = (props) => {
                                 <div className="portfolio-hover">
                                     <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <Image className="img-fluid" src={product2} alt={""}/>
+                                <Image className="img-fluid"
+                                       src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/product2.png"/>
                             </a>
                             <div className="portfolio-caption">
                                 <div className="portfolio-caption-heading">
@@ -59,7 +60,8 @@ const Achievement: React.FC<{ id: string }> = (props) => {
                                 <div className="portfolio-hover">
                                     <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <Image className="img-fluid" src={product3} alt={""}/>
+                                <Image className="img-fluid"
+                                       src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/product3.png"/>
                             </a>
                             <div className="portfolio-caption">
                                 <div className="portfolio-caption-heading">
@@ -77,7 +79,8 @@ const Achievement: React.FC<{ id: string }> = (props) => {
                                 <div className="portfolio-hover">
                                     <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <Image className="img-fluid" src={product4} alt={""}/>
+                                <Image className="img-fluid"
+                                       src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/product4.png"/>
                             </a>
                             <div className="portfolio-caption">
                                 <div className="portfolio-caption-heading">

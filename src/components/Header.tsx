@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from "react";
 import {Nav, Navbar, ToggleButton} from "react-bootstrap";
-import Image from "next/image";
-import Logo from "../static/logo.png";
+// import Image from "next/image";
+// import Logo from "../static/logo.png";
 import {useTranslation} from "next-i18next";
 import {useRouter} from "next/router";
+import Image from "react-bootstrap/Image";
 
 const Header: React.FC = () => {
     const {t} = useTranslation();
@@ -41,7 +42,7 @@ const Header: React.FC = () => {
             <Navbar className="">
                 <Navbar.Brand href="/">
                     <Image className="img-fluid"
-                           src={Logo} alt={""}
+                           src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/logo.png"
                            style={{
                                objectFit: "contain",
                                width: "12rem",
