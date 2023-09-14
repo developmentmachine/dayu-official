@@ -132,7 +132,6 @@ body {
 /* portfolio CSS
 -------------------------------------------------- */
 .achievement {
-    margin-top: 2rem;
     background-color: transparent;
 }
 
@@ -286,7 +285,7 @@ body {
 }
 
 .display-samples {
-    width: 80%;
+    width: 100%;
     height: 25rem;
     margin-bottom: 1rem;
 }

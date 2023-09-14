@@ -10,28 +10,28 @@ const Header: React.FC = () => {
     const {t} = useTranslation();
     const router = useRouter();
 
-    const [radioValue, setRadioValue] = useState('1');
+    const [radioValue, setRadioValue] = useState('zh');
     const [currentNav, setCurrentNav] = useState('');
 
     useEffect(() => {
+        console.log("Current path -> ", router.asPath, router.locale)
         if (router.asPath && router.asPath.startsWith("/#")) {
-            console.log("/#")
-            router.push("/", "/", {locale: 'zh'})
+            window.location.href = "/"
         }
-        if (radioValue === '1' && router.locale !== 'zh') {
-            console.log("route to zh")
+        if (radioValue === 'zh' && router.locale !== 'zh') {
+            console.log("route to -> zh")
             router.push("/" + currentNav, "/" + currentNav, {locale: 'zh'})
             router.locale = 'zh'
-        } else if (radioValue === '2' && router.locale !== 'en') {
-            console.log("route to en")
+        } else if (radioValue === 'en' && router.locale !== 'en') {
+            console.log("route to -> en")
             router.push("/" + currentNav, "/" + currentNav, {locale: 'en'})
             router.locale = 'en'
         }
     }, [radioValue]);
 
     const locales = [
-        {name: '中', value: '1'},
-        {name: 'En', value: '2'},
+        {name: '中', value: 'zh'},
+        {name: 'En', value: 'en'},
     ];
 
     const clickNavItem = (e) => {
