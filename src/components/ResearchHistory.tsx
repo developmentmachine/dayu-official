@@ -16,7 +16,7 @@ const ResearchHistory: React.FC<{ id: string }> = (props) => {
     const [imageSrc, setImageSrc] = useState(timeline1);
     const router = useRouter();
     useEffect(() => {
-        console.log("Current locale -> " + router.locale)
+        // console.log("Current locale -> " + router.locale)
         if (router.locale && router.locale === "en") {
             setImageSrc(timeline2)
         } else {
@@ -26,22 +26,20 @@ const ResearchHistory: React.FC<{ id: string }> = (props) => {
     return (
         <Container className="" id={props.id}>
             <Row>
-                <Image src={imageSrc} fluid/>
+                <Image src={imageSrc} className="w-100" style={{height: "35rem"}}/>
             </Row>
-            <Row>
+            <Row style={{height: "12rem"}}>
                 <p className="lh-lg text-wrap fw-medium">{t("researchHistory:k1")}</p>
             </Row>
-            <Row>
+            <Row style={{height: "4rem"}}>
                 <p className="lh-lg text-wrap">{t("researchHistory:k2")}</p>
             </Row>
             <Row>
-                <Image src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/tech-param.png" fluid
-                       className="mb-4"/>
+                <Image src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/tech-param.png" fluid/>
             </Row>
-            <Row>
+            <Row style={{height: "4rem"}}>
                 <p className="lh-lg text-wrap">{t("researchHistory:k3")}</p>
             </Row>
-
         </Container>
     )
 };

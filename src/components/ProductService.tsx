@@ -17,10 +17,10 @@ const ProductService: React.FC<{ id: string }> = (props) => {
     const {t} = useTranslation();
     return (
         <Container className="" id={props.id}>
-            <div className="text-center">
+            <Row className="text-center" style={{height: "8rem"}}>
                 <p className="fs-3">{t("productService:title")}</p>
                 <p className="text-start">{t("productService:k1")}</p>
-            </div>
+            </Row>
             <Row>
                 <Col>
                     <div className="team-member">
@@ -35,9 +35,11 @@ const ProductService: React.FC<{ id: string }> = (props) => {
                     </div>
                 </Col>
             </Row>
-            <div className="team-member">
-                <p className="text-start">{t("productService:k2")}</p>
-            </div>
+            <Row>
+                <Col>
+                    <p className="text-start" style={{height: "4rem"}}>{t("productService:k2")}</p>
+                </Col>
+            </Row>
             <Row>
                 <Col>
                     <div className="team-member">
@@ -58,31 +60,37 @@ const ProductService: React.FC<{ id: string }> = (props) => {
                     </div>
                 </Col>
             </Row>
-            <div className="">
-                <p className="">{t("productService:k3")}</p>
-            </div>
+            <Row>
+                <Col>
+                    <p style={{height: "4rem"}}>{t("productService:k3")}</p>
+                </Col>
+            </Row>
             <Row>
                 <Col>
                     <Image src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/ps5.png"
-                           className="display-samples"/>
+                           className="display-samples w-100"/>
+                    <p style={{height: "4rem"}}>{t("productService:k4")}</p>
                 </Col>
-                <p>{t("productService:k4")}</p>
+            </Row>
+            <Row>
                 <Col>
                     <Image src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/ps6.png"
                            className="display-samples"/>
+                    <p style={{height: "4rem"}}>{t("productService:k5")}</p>
                 </Col>
-                <p>{t("productService:k5")}</p>
                 <Col>
                     <div className="">
                         <Image src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/ps7.png"
                                className="display-samples"/>
                     </div>
+                    <p style={{height: "4rem"}}>{t("productService:k6")}</p>
                 </Col>
-                <p>{t("productService:k6")}</p>
             </Row>
             <Row>
-                <Col>
-                    <Player src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/video/demo.mp4" autoPlay>
+                <Col style={{height: "35rem"}}>
+                    <Player
+                        src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/video/demo.mp4"
+                        autoPlay={true}>
                         <BigPlayButton position="center"/>
                         <ControlBar autoHide={false} className="my-class"/>
                     </Player>
