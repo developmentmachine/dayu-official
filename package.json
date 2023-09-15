@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "next build",
-    "start": "next start",
+    "start": "next dev",
     "lint": "next lint",
     "fix": "next lint --fix",
     "test": "npm run build"
@@ -22,12 +22,13 @@
     "bootstrap": "^5.3.1",
     "i18next": "^23.4.6",
     "next": "^13.4.12",
+    "next-i18next": "^14.0.2",
     "next-videos": "^1.4.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^13.2.2",
-    "next-i18next": "^14.0.2",
+    "react-icons": "^4.11.0",
     "redux": "^4.2.1",
     "sharp": "^0.32.4",
     "typescript": "^5.1.6",
