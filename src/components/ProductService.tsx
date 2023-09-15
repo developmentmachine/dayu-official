@@ -9,17 +9,23 @@ import {Col, Container, Image, Row} from "react-bootstrap";
 // import ps6 from "../static/ps6.png";
 // import ps7 from "../static/ps7.png";
 // import Image from "next/image";
-import {BigPlayButton, ControlBar, Player} from "video-react";
+// import {BigPlayButton, ControlBar, Player} from "video-react";
 import {useTranslation} from "next-i18next";
 
 
 const ProductService: React.FC<{ id: string }> = (props) => {
     const {t} = useTranslation();
     return (
-        <Container className="" id={props.id}>
-            <Row className="text-center" style={{height: "8rem"}}>
-                <p className="fs-3">{t("productService:title")}</p>
-                <p className="text-start">{t("productService:k1")}</p>
+        <Container id={props.id}>
+            <Row>
+                <Col>
+                    <p className="h2 text-center">{t("productService:title")}</p>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <p className="text-start">{t("productService:k1")}</p>
+                </Col>
             </Row>
             <Row>
                 <Col>
@@ -37,7 +43,7 @@ const ProductService: React.FC<{ id: string }> = (props) => {
             </Row>
             <Row>
                 <Col>
-                    <p className="text-start" style={{height: "4rem"}}>{t("productService:k2")}</p>
+                    <p className="text-start">{t("productService:k2")}</p>
                 </Col>
             </Row>
             <Row>
@@ -62,38 +68,41 @@ const ProductService: React.FC<{ id: string }> = (props) => {
             </Row>
             <Row>
                 <Col>
-                    <p style={{height: "4rem"}}>{t("productService:k3")}</p>
+                    <p>{t("productService:k3")}</p>
                 </Col>
             </Row>
             <Row>
                 <Col>
                     <Image src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/ps5.png"
                            className="display-samples w-100"/>
-                    <p style={{height: "4rem"}}>{t("productService:k4")}</p>
+                    <p>{t("productService:k4")}</p>
                 </Col>
             </Row>
             <Row>
-                <Col>
+                <Col md={"12"} lg={"6"}>
                     <Image src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/ps6.png"
                            className="display-samples"/>
-                    <p style={{height: "4rem"}}>{t("productService:k5")}</p>
+                    <p>{t("productService:k5")}</p>
                 </Col>
-                <Col>
+                <Col md={"12"} lg={"6"}>
                     <div className="">
                         <Image src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/ps7.png"
                                className="display-samples"/>
                     </div>
-                    <p style={{height: "4rem"}}>{t("productService:k6")}</p>
+                    <p>{t("productService:k6")}</p>
                 </Col>
             </Row>
             <Row>
-                <Col style={{height: "35rem"}}>
-                    <Player
+                <Col>
+                    {/*<Player
                         src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/video/demo.mp4"
                         autoPlay={true}>
                         <BigPlayButton position="center"/>
                         <ControlBar autoHide={false} className="my-class"/>
-                    </Player>
+                    </Player>*/}
+                    <video controls={true} autoPlay={true} loop={true} className="w-100 h-auto">
+                        <source src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/video/demo.mp4"/>
+                    </video>
                 </Col>
             </Row>
         </Container>

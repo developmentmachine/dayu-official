@@ -11,7 +11,7 @@ const Achievement: React.FC<{ id: string }> = (props) => {
     const {t} = useTranslation();
     return (
         <Container id={props.id}>
-            <div className="achievement" style={{height: "42rem"}}>
+            <div className="achievement">
                 <div className="text-center">
                     <h2 className="section-heading text-uppercase">{t("achievement:title")}</h2>
                 </div>

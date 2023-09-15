@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Container, Image, Row} from "react-bootstrap";
+import {Col, Container, Image, Row} from "react-bootstrap";
 import "node_modules/video-react/dist/video-react.css";
 // import timeline from "../static/timeline.png";
 // import timeline2 from "../static/timeline2.png";
@@ -26,19 +26,28 @@ const ResearchHistory: React.FC<{ id: string }> = (props) => {
     return (
         <Container className="" id={props.id}>
             <Row>
-                <Image src={imageSrc} className="w-100" style={{height: "35rem"}}/>
-            </Row>
-            <Row style={{height: "12rem"}}>
-                <p className="lh-lg text-wrap fw-medium">{t("researchHistory:k1")}</p>
-            </Row>
-            <Row style={{height: "4rem"}}>
-                <p className="lh-lg text-wrap">{t("researchHistory:k2")}</p>
+                <Col>
+                    <Image src={imageSrc} className="w-100"/>
+                </Col>
             </Row>
             <Row>
-                <Image src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/tech-param.png" fluid/>
+                <Col>
+                    <p className="lh-lg text-wrap fw-medium">{t("researchHistory:k1")}</p>
+                </Col>
             </Row>
-            <Row style={{height: "4rem"}}>
-                <p className="lh-lg text-wrap">{t("researchHistory:k3")}</p>
+            <Row>
+                <Col xs={"12"} sm={"12"} md={"12"} lg={"6"}>
+                    <p className="lh-lg text-wrap">{t("researchHistory:k2")}</p>
+                </Col>
+                <Col xs={"12"} sm={"12"} md={"12"} lg={"6"}>
+                    <p className="lh-lg text-wrap">{t("researchHistory:k3")}</p>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <Image src="https://dayu-app-1320376356.cos.ap-beijing.myqcloud.com/image/tech-param.png"
+                           className="w-100" fluid/>
+                </Col>
             </Row>
         </Container>
     )
