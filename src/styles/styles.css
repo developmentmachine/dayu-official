@@ -135,7 +135,7 @@ body {
 }
 
 .achievement .portfolio-item {
-    max-width: 26rem;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -149,8 +149,8 @@ body {
 .achievement .portfolio-item .portfolio-link .portfolio-hover {
     display: flex;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    /*width: 100%;*/
+    /*height: 100%;*/
     /*background: rgba(255, 200, 0, 0.9);*/
     align-items: center;
     justify-content: center;
@@ -168,19 +168,21 @@ body {
 }
 
 .achievement .portfolio-item .portfolio-caption {
-    padding: 1.5rem;
+    /*padding: 1.5rem;*/
     text-align: center;
     background-color: #fff;
 }
 
 .achievement .portfolio-item img {
-    width: 30rem;
-    height: 20rem;
-    object-fit: cover;
+    width: 64rem;
+    height: 32rem;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .achievement .portfolio-item .portfolio-caption .portfolio-caption-heading {
-    font-size: 1.5rem;
+    /*font-size: 1.5rem;*/
+    font-size: large;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 700;
     margin-bottom: 0;
@@ -298,4 +300,8 @@ body {
     color: white;
     align-items: center;
     justify-content: center;
+}
+
+.swiper .swiper-scrollbar {
+    margin-top: 1rem;
 }
